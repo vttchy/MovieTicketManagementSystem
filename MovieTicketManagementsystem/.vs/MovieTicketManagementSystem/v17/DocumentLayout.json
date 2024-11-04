@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\movieticketmanagementsystem\\regform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\regform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|d:\\.net\\movieticketmanagementsystem\\movieticketmanagementsystem\\movieticketmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\movieticketmanagementsystem\\regform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\regform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\movieticketmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|d:\\.net\\movieticketmanagementsystem\\movieticketmanagementsystem\\movieticketmanagementsystem\\resetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\resetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\movieticketmanagementsystem\\resetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\resetpass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\movieticketmanagementsystem\\getotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\getotp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\movieticketmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22D8315-F132-42A1-BB26-F01B81076057}|MovieTicketManagementSystem\\MovieTicketManagementSystem.csproj|solutionrelative:movieticketmanagementsystem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\Form1.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\Form1.cs",
+              "RelativeToolTip": "MovieTicketManagementSystem\\Form1.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAlwD8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T02:53:55.18Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetOTP.cs",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\GetOTP.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\GetOTP.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\GetOTP.cs",
+              "RelativeToolTip": "MovieTicketManagementSystem\\GetOTP.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAD4vz8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T03:26:42.106Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ResetPass.cs",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\ResetPass.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\ResetPass.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\ResetPass.cs",
+              "RelativeToolTip": "MovieTicketManagementSystem\\ResetPass.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAtwHIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T13:55:11.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResetPass.cs [Design]",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\ResetPass.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\ResetPass.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\ResetPass.cs [Design]",
+              "RelativeToolTip": "MovieTicketManagementSystem\\ResetPass.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T03:34:55.626Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\Form1.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\Form1.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\Form1.cs [Design]",
+              "RelativeToolTip": "MovieTicketManagementSystem\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T02:01:00.747Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\Form2.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\Form2.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\Form2.cs [Design]",
+              "RelativeToolTip": "MovieTicketManagementSystem\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T01:15:36.435Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RegForm.cs",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\RegForm.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\RegForm.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\RegForm.cs",
+              "RelativeToolTip": "MovieTicketManagementSystem\\RegForm.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAD4v0QAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T02:31:43.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegForm.cs [Design]",
+              "DocumentMoniker": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\RegForm.cs",
+              "RelativeDocumentMoniker": "MovieTicketManagementSystem\\RegForm.cs",
+              "ToolTip": "D:\\.Net\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\MovieTicketManagementSystem\\RegForm.cs [Design]",
+              "RelativeToolTip": "MovieTicketManagementSystem\\RegForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T15:15:23.654Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
