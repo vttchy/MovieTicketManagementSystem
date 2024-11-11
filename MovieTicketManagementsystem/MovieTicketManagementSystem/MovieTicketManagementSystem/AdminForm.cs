@@ -115,5 +115,10 @@ namespace MovieTicketManagementSystem
         {
 
         }
+
+        private void addMoieeForm2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

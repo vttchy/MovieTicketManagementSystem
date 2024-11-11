@@ -63,7 +63,7 @@ namespace MovieTicketManagementSystem
             {
                 conn.Open();
                 string email = login_email.Text;
-                string query = "SELECT passWord FROM users WHERE email = @Email";
+                string query = "SELECT passWord, role_id FROM users WHERE email = @Email";
 
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -73,16 +73,30 @@ namespace MovieTicketManagementSystem
                     {
                         if (reader.HasRows)
                         {
-                            reader.Read(); // Chỉ cần đọc một lần
+                            reader.Read(); // Đọc hàng dữ liệu
 
                             string hashedPassword = reader["passWord"].ToString();
+                            string roleId = reader["role_id"].ToString(); // Lấy giá trị role_id
 
                             // Kiểm tra mật khẩu
                             if (VerifyPassword(login_password.Text, hashedPassword))
                             {
-                                AdminForm adminForm = new AdminForm();
-                                adminForm.Show();    // Hiển thị AdmiForm
-                                this.Hide();         // Ẩn form đăng nhập
+                                if (roleId == "admin")
+                                {
+                                    AdminForm adminForm = new AdminForm();
+                                    adminForm.Show();    // Hiển thị AdminForm
+                                }
+                                else if (roleId == "staff")
+                                {
+                                    staffForm staffForm = new staffForm();
+                                    staffForm.Show();    // Hiển thị StaffForm
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Không có quyền truy cập!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+
+                                this.Hide(); // Ẩn form đăng nhập
                             }
                             else
                             {
@@ -97,6 +111,7 @@ namespace MovieTicketManagementSystem
                 }
             }
         }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

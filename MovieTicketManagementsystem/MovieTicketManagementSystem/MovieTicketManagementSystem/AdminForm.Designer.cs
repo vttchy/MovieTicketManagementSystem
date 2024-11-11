@@ -41,6 +41,7 @@
             this.customers_btn = new System.Windows.Forms.Button();
             this.addMoive_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.addMoieeForm2 = new MovieTicketManagementSystem.AddMoieeForm();
             this.addMoieeForm1 = new MovieTicketManagementSystem.AddMoieeForm();
             this.addStaffForm1 = new MovieTicketManagementSystem.AddStaffForm();
             this.dashboardForm1 = new MovieTicketManagementSystem.dashboardForm();
@@ -53,6 +54,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.addMoieeForm2);
             this.panel3.Controls.Add(this.addMoieeForm1);
             this.panel3.Controls.Add(this.addStaffForm1);
             this.panel3.Controls.Add(this.dashboardForm1);
@@ -214,6 +216,14 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
+            // addMoieeForm2
+            // 
+            this.addMoieeForm2.Location = new System.Drawing.Point(235, 71);
+            this.addMoieeForm2.Name = "addMoieeForm2";
+            this.addMoieeForm2.Size = new System.Drawing.Size(1296, 810);
+            this.addMoieeForm2.TabIndex = 4;
+            this.addMoieeForm2.Load += new System.EventHandler(this.addMoieeForm2_Load);
+            // 
             // addMoieeForm1
             // 
             this.addMoieeForm1.Location = new System.Drawing.Point(1504, 280);
@@ -277,5 +287,6 @@
         private AddStaffForm addStaffForm1;
         private AddMoieeForm addMoieeForm1;
         private System.Windows.Forms.Button button1;
+        private AddMoieeForm addMoieeForm2;
     }
 }

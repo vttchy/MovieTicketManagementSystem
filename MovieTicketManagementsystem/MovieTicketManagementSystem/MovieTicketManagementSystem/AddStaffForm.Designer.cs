@@ -76,7 +76,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 751);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // reg_cPassword
             // 
@@ -172,7 +171,6 @@
             this.reg_userName.Name = "reg_userName";
             this.reg_userName.Size = new System.Drawing.Size(261, 24);
             this.reg_userName.TabIndex = 29;
-            this.reg_userName.TextChanged += new System.EventHandler(this.reg_userName_TextChanged);
             // 
             // label2
             // 
@@ -199,6 +197,7 @@
             this.addStaff_clearBtn.TabIndex = 16;
             this.addStaff_clearBtn.Text = "CLEAR";
             this.addStaff_clearBtn.UseVisualStyleBackColor = false;
+            this.addStaff_clearBtn.Click += new System.EventHandler(this.addStaff_clearBtn_Click);
             // 
             // addStaff_daleteBtn
             // 
@@ -215,6 +214,7 @@
             this.addStaff_daleteBtn.TabIndex = 15;
             this.addStaff_daleteBtn.Text = "DELETE";
             this.addStaff_daleteBtn.UseVisualStyleBackColor = false;
+            this.addStaff_daleteBtn.Click += new System.EventHandler(this.addStaff_daleteBtn_Click);
             // 
             // addStaff_updateBtn
             // 
@@ -260,7 +260,6 @@
             this.label1.Size = new System.Drawing.Size(187, 21);
             this.label1.TabIndex = 7;
             this.label1.Text = "Fill staff Information";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2
             // 
@@ -287,8 +286,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(795, 751);
             this.dataGridView1.TabIndex = 8;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label8
             // 
@@ -300,7 +298,6 @@
             this.label8.Size = new System.Drawing.Size(79, 21);
             this.label8.TabIndex = 7;
             this.label8.Text = "All Staff";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // AddStaffForm
             // 

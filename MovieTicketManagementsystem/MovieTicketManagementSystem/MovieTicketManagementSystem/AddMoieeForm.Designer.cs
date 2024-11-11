@@ -32,22 +32,24 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.status = new System.Windows.Forms.ComboBox();
+            this.clearMovie_Btn = new System.Windows.Forms.Button();
+            this.deleteMovie_Btn = new System.Windows.Forms.Button();
+            this.updateMovie_Btn = new System.Windows.Forms.Button();
             this.addMovie_Btn = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.capacity = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.addMovie_importBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.price = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.genre = new System.Windows.Forms.ComboBox();
+            this.movieName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.addMovie_movieID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.panel1.SuspendLayout();
@@ -69,6 +71,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.Location = new System.Drawing.Point(20, 48);
@@ -77,6 +80,8 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1208, 212);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label8
             // 
@@ -92,75 +97,104 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.status);
+            this.panel2.Controls.Add(this.clearMovie_Btn);
+            this.panel2.Controls.Add(this.deleteMovie_Btn);
+            this.panel2.Controls.Add(this.updateMovie_Btn);
             this.panel2.Controls.Add(this.addMovie_Btn);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.capacity);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.addMovie_importBtn);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.price);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.genre);
+            this.panel2.Controls.Add(this.movieName);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.addMovie_movieID);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(24, 324);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1252, 463);
             this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button5
+            // label6
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(814, 341);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 45);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "CLEAR";
-            this.button5.UseVisualStyleBackColor = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(580, 224);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 19);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Status:";
             // 
-            // button4
+            // status
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(648, 341);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 45);
-            this.button4.TabIndex = 23;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.status.FormattingEnabled = true;
+            this.status.Items.AddRange(new object[] {
+            "Available",
+            "Unavailable",
+            "Deleted"});
+            this.status.Location = new System.Drawing.Point(665, 220);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(216, 28);
+            this.status.TabIndex = 25;
+            this.status.SelectedIndexChanged += new System.EventHandler(this.status_SelectedIndexChanged);
             // 
-            // button3
+            // clearMovie_Btn
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(413, 341);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 45);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "UPDATE";
-            this.button3.UseVisualStyleBackColor = false;
+            this.clearMovie_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
+            this.clearMovie_Btn.FlatAppearance.BorderSize = 0;
+            this.clearMovie_Btn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.clearMovie_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.clearMovie_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearMovie_Btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearMovie_Btn.ForeColor = System.Drawing.Color.White;
+            this.clearMovie_Btn.Location = new System.Drawing.Point(814, 341);
+            this.clearMovie_Btn.Name = "clearMovie_Btn";
+            this.clearMovie_Btn.Size = new System.Drawing.Size(129, 45);
+            this.clearMovie_Btn.TabIndex = 24;
+            this.clearMovie_Btn.Text = "CLEAR";
+            this.clearMovie_Btn.UseVisualStyleBackColor = false;
+            this.clearMovie_Btn.Click += new System.EventHandler(this.clearMovie_Btn_Click);
+            // 
+            // deleteMovie_Btn
+            // 
+            this.deleteMovie_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
+            this.deleteMovie_Btn.FlatAppearance.BorderSize = 0;
+            this.deleteMovie_Btn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.deleteMovie_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.deleteMovie_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteMovie_Btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deleteMovie_Btn.ForeColor = System.Drawing.Color.White;
+            this.deleteMovie_Btn.Location = new System.Drawing.Point(648, 341);
+            this.deleteMovie_Btn.Name = "deleteMovie_Btn";
+            this.deleteMovie_Btn.Size = new System.Drawing.Size(129, 45);
+            this.deleteMovie_Btn.TabIndex = 23;
+            this.deleteMovie_Btn.Text = "DELETE";
+            this.deleteMovie_Btn.UseVisualStyleBackColor = false;
+            this.deleteMovie_Btn.Click += new System.EventHandler(this.deleteMovie_Btn_Click);
+            // 
+            // updateMovie_Btn
+            // 
+            this.updateMovie_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(19)))), ((int)(((byte)(33)))));
+            this.updateMovie_Btn.FlatAppearance.BorderSize = 0;
+            this.updateMovie_Btn.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.updateMovie_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
+            this.updateMovie_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateMovie_Btn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateMovie_Btn.ForeColor = System.Drawing.Color.White;
+            this.updateMovie_Btn.Location = new System.Drawing.Point(413, 341);
+            this.updateMovie_Btn.Name = "updateMovie_Btn";
+            this.updateMovie_Btn.Size = new System.Drawing.Size(129, 45);
+            this.updateMovie_Btn.TabIndex = 22;
+            this.updateMovie_Btn.Text = "UPDATE";
+            this.updateMovie_Btn.UseVisualStyleBackColor = false;
+            this.updateMovie_Btn.Click += new System.EventHandler(this.updateMovie_Btn_Click);
             // 
             // addMovie_Btn
             // 
@@ -179,13 +213,13 @@
             this.addMovie_Btn.UseVisualStyleBackColor = false;
             this.addMovie_Btn.Click += new System.EventHandler(this.addMovie_Btn_Click);
             // 
-            // textBox4
+            // capacity
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(665, 153);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 27);
-            this.textBox4.TabIndex = 20;
+            this.capacity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.capacity.Location = new System.Drawing.Point(665, 153);
+            this.capacity.Name = "capacity";
+            this.capacity.Size = new System.Drawing.Size(216, 27);
+            this.capacity.TabIndex = 20;
             // 
             // label5
             // 
@@ -222,7 +256,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(140, 157);
             this.panel3.TabIndex = 17;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // pictureBox1
             // 
@@ -232,15 +265,14 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox3
+            // price
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(665, 92);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 27);
-            this.textBox3.TabIndex = 16;
+            this.price.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.price.Location = new System.Drawing.Point(665, 92);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(216, 27);
+            this.price.TabIndex = 16;
             // 
             // label4
             // 
@@ -264,28 +296,28 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Genre:";
             // 
-            // comboBox1
+            // genre
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genre.FormattingEnabled = true;
+            this.genre.Items.AddRange(new object[] {
             "Educational",
             "Comedy",
             "Drama",
             "Action",
             "Horror"});
-            this.comboBox1.Location = new System.Drawing.Point(320, 220);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(216, 28);
-            this.comboBox1.TabIndex = 13;
+            this.genre.Location = new System.Drawing.Point(320, 220);
+            this.genre.Name = "genre";
+            this.genre.Size = new System.Drawing.Size(216, 28);
+            this.genre.TabIndex = 13;
             // 
-            // textBox2
+            // movieName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(320, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 27);
-            this.textBox2.TabIndex = 12;
+            this.movieName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.movieName.Location = new System.Drawing.Point(320, 157);
+            this.movieName.Name = "movieName";
+            this.movieName.Size = new System.Drawing.Size(216, 27);
+            this.movieName.TabIndex = 12;
             // 
             // label1
             // 
@@ -298,13 +330,13 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Movie Name:";
             // 
-            // textBox1
+            // addMovie_movieID
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(320, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 27);
-            this.textBox1.TabIndex = 10;
+            this.addMovie_movieID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addMovie_movieID.Location = new System.Drawing.Point(320, 92);
+            this.addMovie_movieID.Name = "addMovie_movieID";
+            this.addMovie_movieID.Size = new System.Drawing.Size(216, 27);
+            this.addMovie_movieID.TabIndex = 10;
             // 
             // label2
             // 
@@ -343,22 +375,24 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox addMovie_movieID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox genre;
+        private System.Windows.Forms.TextBox movieName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox price;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button addMovie_importBtn;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox capacity;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button clearMovie_Btn;
+        private System.Windows.Forms.Button deleteMovie_Btn;
+        private System.Windows.Forms.Button updateMovie_Btn;
         private System.Windows.Forms.Button addMovie_Btn;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox status;
     }
 }

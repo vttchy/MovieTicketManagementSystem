@@ -80,6 +80,12 @@
     <Compile Include="AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="buyTicketForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="buyTicketForm.Designer.cs">
+      <DependentUpon>buyTicketForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckOTP.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,7 @@
     <Compile Include="GetOTP.Designer.cs">
       <DependentUpon>GetOTP.cs</DependentUpon>
     </Compile>
+    <Compile Include="movieData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\KetNoi.cs" />
@@ -121,6 +128,12 @@
       <DependentUpon>ResetPass.cs</DependentUpon>
     </Compile>
     <Compile Include="staffData.cs" />
+    <Compile Include="staffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffForm.Designer.cs">
+      <DependentUpon>staffForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddMoieeForm.resx">
       <DependentUpon>AddMoieeForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buyTicketForm.resx">
+      <DependentUpon>buyTicketForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckOTP.resx">
       <DependentUpon>CheckOTP.cs</DependentUpon>
@@ -157,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ResetPass.resx">
       <DependentUpon>ResetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffForm.resx">
+      <DependentUpon>staffForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
